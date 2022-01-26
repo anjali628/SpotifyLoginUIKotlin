@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Email or Username"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/mail_TV"
+
+        >
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/mail_Edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_TV"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:textColor="@color/white">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="Password"
+        android:layout_below="@id/mail_Edit_text"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/password_TV"
+
+        >
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordlayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/password_TV"
+
+        >
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text_bg">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/passwordToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_visibility_24"
+            app:tint="@color/white">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_disabled"
+        android:clickable="false"
+        android:enabled="false"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="Log In"
+        android:textColor="#FF333333"
+        android:textSize="16sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/loginWithoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/login_withour_bg"
+        android:letterSpacing="0.2"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Log In Without Password"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+
+
+
+</RelativeLayout>
